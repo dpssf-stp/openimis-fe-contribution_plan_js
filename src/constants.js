@@ -35,7 +35,7 @@ export const PAYMENT_PLAN_TYPE = {
     BENEFIT_PLAN: 'benefitplan'
 }
 
-export const PAYMENT_PLAN_TYPE_LIST = [PAYMENT_PLAN_TYPE.PRODUCT, PAYMENT_PLAN_TYPE.BENEFIT_PLAN]
+export const PAYMENT_PLAN_TYPE_LIST = [PAYMENT_PLAN_TYPE.BENEFIT_PLAN]
 export const EMPTY_STRING = " "
 
 export const CLEARED_STATE_FILTER = { field: "", filter: "", type: "", value: "" }
