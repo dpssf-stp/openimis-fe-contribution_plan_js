@@ -14,7 +14,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import PaymentPlanHeadPanel from "./PaymentPlanHeadPanel";
 import { fetchPaymentPlan, clearPaymentPlan } from "../actions";
-import { MAX_PERIODICITY_VALUE, MIN_PERIODICITY_VALUE } from "../constants";
+import { MAX_PERIODICITY_VALUE, MIN_PERIODICITY_VALUE, PAYMENT_PLAN_TYPE } from "../constants";
 import _ from "lodash";
 
 const styles = theme => ({
@@ -29,7 +29,9 @@ class PaymentPlanForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            paymentPlan: {},
+            paymentPlan: {
+                benefitPlanTypeName: PAYMENT_PLAN_TYPE.BENEFIT_PLAN, 
+            },
             jsonExtValid: true,
             requiredValid: false,
             clientMutationId: null,

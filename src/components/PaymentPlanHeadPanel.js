@@ -53,6 +53,7 @@ class PaymentPlanHeadPanel extends FormPanel {
         this.state = {
           appliedCustomFilters: [CLEARED_STATE_FILTER],
           appliedFiltersRowStructure: [CLEARED_STATE_FILTER],
+          data: {},
         };
     }
 
